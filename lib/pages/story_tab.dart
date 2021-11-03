@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:whatsappf/pages/story_content.dart';
 
-class HistoryTab extends StatelessWidget {
-  const HistoryTab({Key? key}) : super(key: key);
+class StoryTab extends StatelessWidget {
+  const StoryTab({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,11 +19,15 @@ class HistoryTab extends StatelessWidget {
         SliverList(
           delegate: SliverChildBuilderDelegate((BuildContext context, int index) {
             return ListTile(
-              title: Text('Title $index'),
+              title: Text('Estado $index'),
               subtitle: Text('Ayer'),
               leading: CircleAvatar(
-                child: Text(index.toString()),
+                foregroundImage: AssetImage('images/person_placeholder.jpg'),
               ),
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(
+                    builder: (BuildContext context) => const StoryContent()));
+              },
             );
           }, childCount: 6)),
         SliverToBoxAdapter(
@@ -36,7 +41,7 @@ class HistoryTab extends StatelessWidget {
         SliverList(
             delegate: SliverChildBuilderDelegate((BuildContext context, int index) {
               return ListTile(
-                title: Text('Title $index'),
+                title: Text('Estado $index'),
                 subtitle: Text('Ayer'),
                 leading: CircleAvatar(
                   child: Text(index.toString()),
