@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "660678798674",
+    "project_id": "carloscuetowhatsappf",
+    "storage_bucket": "carloscuetowhatsappf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:660678798674:android:142d9199ed05523c195e8b",
+        "android_client_info": {
+          "package_name": "pe.demo.whatsappf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "660678798674-o643lnuavdi6d37sksushrug7ble7u52.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJAyhE3ut1rRS6hL126UD71GFvHZ88b64"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "660678798674-o643lnuavdi6d37sksushrug7ble7u52.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
